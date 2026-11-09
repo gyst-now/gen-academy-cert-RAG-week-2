@@ -1,0 +1,193 @@
+[
+  {
+    "id": "D01",
+    "category": "direct",
+    "question": "How do I enter PTO in Workday?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "time-off",
+        "How to Enter PTO in Workday"
+      ]
+    ],
+    "review": "Check the workflow for regular PTO and distinguish it from a leave request."
+  },
+  {
+    "id": "D02",
+    "category": "direct",
+    "question": "How do I enter a public holiday in Workday?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "time-off",
+        "How to Enter Public Holidays in Workday"
+      ]
+    ],
+    "review": "Preserve which holidays require a Workday entry and any exceptions in the cited policy."
+  },
+  {
+    "id": "D03",
+    "category": "direct",
+    "question": "How do I request time off after a death in the family?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "time-off",
+        "Bereavement / Request Process"
+      ]
+    ],
+    "review": "Describe the bereavement request process."
+  },
+  {
+    "id": "D04",
+    "category": "direct",
+    "question": "What documentation do I need for jury duty?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "time-off",
+        "Legal Civic Obligations Policy / Required Documentation"
+      ]
+    ],
+    "review": "Identify the documentation requested for jury duty."
+  },
+  {
+    "id": "D05",
+    "category": "direct",
+    "question": "How do I request volunteer time off?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "time-off",
+        "Volunteer / Request Process"
+      ]
+    ],
+    "review": "Describe the volunteer time-off request process."
+  },
+  {
+    "id": "D06",
+    "category": "direct",
+    "question": "How do I initiate parental leave at GitLab?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "leave",
+        "How to Initiate Your Leave"
+      ]
+    ],
+    "review": "Identify the steps to initiate parental leave."
+  },
+  {
+    "id": "D07",
+    "category": "direct",
+    "question": "What are the rules for returning to work at 50% capacity after parental leave?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "leave",
+        "Returning to Work at 50% Capacity"
+      ]
+    ],
+    "review": "Describe the conditions and timing for the reduced schedule."
+  },
+  {
+    "id": "X01",
+    "category": "cross-document",
+    "question": "Can I use flexible PTO to extend parental leave, and how do I enter that PTO in Workday?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "leave",
+        "Supplement with Paid Time Off"
+      ],
+      [
+        "time-off",
+        "How to Enter PTO in Workday"
+      ]
+    ],
+    "review": "Cover the conditions for combining PTO with parental leave and cite the entry instructions."
+  },
+  {
+    "id": "X02",
+    "category": "cross-document",
+    "question": "If I am sick for two workdays versus a longer absence, when do I use regular sick time and where is the separate sick leave process described?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "time-off",
+        "For Sick Absences 1-5"
+      ],
+      [
+        "leave",
+        "Sick Leave"
+      ]
+    ],
+    "review": "Distinguish regular sick time from extended sick leave and cite both procedures."
+  },
+  {
+    "id": "X03",
+    "category": "cross-document",
+    "question": "How do I enter PTO in Workday and communicate upcoming time off to my team?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "time-off",
+        "How to Enter PTO in Workday"
+      ],
+      [
+        "philosophy",
+        "Communicat"
+      ]
+    ],
+    "review": "Cover both recording and notifying colleagues."
+  },
+  {
+    "id": "X04",
+    "category": "cross-document",
+    "question": "How does GitLab distinguish ordinary time off from extended leave, and how do I initiate parental leave?",
+    "expected_status": "answered",
+    "targets": [
+      [
+        "overview",
+        "About Our Terminology"
+      ],
+      [
+        "leave",
+        "How to Initiate Your Leave"
+      ]
+    ],
+    "review": "Explain the terminology and cite the parental leave request procedure."
+  },
+  {
+    "id": "A01",
+    "category": "ambiguous",
+    "question": "I need two weeks off. Which policy applies?",
+    "expected_status": "clarify",
+    "targets": [],
+    "review": "Ask what kind of absence is involved before choosing a policy."
+  },
+  {
+    "id": "A02",
+    "category": "ambiguous",
+    "question": "Does my local leave law apply to me?",
+    "expected_status": "clarify",
+    "targets": [],
+    "review": "Ask for location and leave type before applying a jurisdiction-specific rule."
+  },
+  {
+    "id": "O01",
+    "category": "out of scope",
+    "question": "How do I bake sourdough?",
+    "expected_status": "out_of_scope",
+    "targets": [],
+    "review": "Return the exact out-of-scope message."
+  },
+  {
+    "id": "O02",
+    "category": "insufficient evidence",
+    "question": "What is my remaining individual leave balance in Workday?",
+    "expected_status": "insufficient_evidence",
+    "targets": [],
+    "review": "Explain that the handbook cannot supply the user's individual balance."
+  }
+]

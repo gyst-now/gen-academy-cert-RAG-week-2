@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; font-family: system-ui, sans-serif; background: #f4f6f2; color: #17251f; }
+body { margin: 0; padding: 2.5rem 1rem; }
+main { max-width: 760px; margin: auto; }
+header { padding: 1.8rem; border-radius: 18px; background: #15392f; color: #fff; }
+.brand, #mode { font-size: .72rem; letter-spacing: .08em; }
+#mode { float: right; color: #d8eddd; letter-spacing: 0; }
+h1 { font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: -.04em; margin: .7rem 0 .25rem; }
+header p { margin: 0; color: #e1ece5; max-width: 52ch; }
+#examples { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+#examples button { border: 1px solid #a4bbb1; background: #fff; border-radius: 999px; padding: .5rem .75rem; color: #15392f; text-align: left; }
+#conversation { display: grid; gap: .65rem; }
+.message { background: white; padding: .9rem 1rem; border: 1px solid #d6dfd8; border-radius: 12px; overflow-wrap: anywhere; }
+.message.user { background: #e1ece5; justify-self: end; }
+.message p { margin: 0; white-space: pre-wrap; }
+details { margin-top: .5rem; }
+summary { cursor: pointer; }
+details p { padding: .5rem 0; color: #334c41; font-size: .9rem; }
+a { color: #185541; }
+form { margin-top: 1rem; }
+label { display: block; font-weight: 600; margin-bottom: .4rem; }
+[hidden] { display: none; }
+.composer { display: flex; gap: .5rem; }
+input { width: 100%; min-width: 0; padding: .7rem; border: 1px solid #8fa79c; border-radius: 8px; background: #fff; color: inherit; }
+#access { display: block; max-width: 280px; margin: .35rem 0 .8rem; }
+#submit { border: 0; border-radius: 8px; padding: .7rem 1rem; color: #fff; background: #15392f; }
+#submit:disabled { opacity: .6; cursor: wait; }
+footer { color: #41594e; margin-top: 1.4rem; font-size: .85rem; }

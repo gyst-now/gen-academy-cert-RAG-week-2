@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Policy Desk · GitLab handbook demo</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script defer src="/assets/chat.js"></script>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="brand">POLICY DESK</span>
+      <span id="mode">Checking handbook access…</span>
+      <h1>Time off &amp; leave</h1>
+      <p>Ask a question about GitLab’s public handbook and see the policy sections behind the answer.</p>
+    </header>
+    <section id="examples" aria-label="Example questions">
+      <button type="button">How do I enter PTO in Workday?</button>
+      <button type="button">Can I use PTO to extend parental leave?</button>
+      <button type="button">I need two weeks off. Which policy applies?</button>
+    </section>
+    <div id="conversation" role="log" aria-live="polite"></div>
+    <form id="chat">
+      <label id="access-wrap" hidden>Demo access code
+        <input id="access" type="password" autocomplete="off">
+      </label>
+      <label for="question">Your question</label>
+      <div class="composer">
+        <input id="question" required maxlength="1200" placeholder="Ask about time off or leave…" autocomplete="off">
+        <button id="submit" type="submit">Send</button>
+      </div>
+    </form>
+    <footer>Independent class project · <a href="https://handbook.gitlab.com/handbook/people-group/time-off-and-absence/">GitLab Handbook</a></footer>
+  </main>
+</body>
+</html>
