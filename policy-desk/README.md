@@ -2,6 +2,8 @@
 
 On the coverage experiment branch, set `POLICY_RETRIEVAL_VARIANT` to `hybrid`, `dense`, `dense_diverse`, or `dense_split` in the local environment. The split variant uses the chat model to propose two searches when the question appears to have multiple parts. Run `uv run python evaluate_coverage.py --output data/coverage-experiment.json` with Supabase and chat configured to reproduce the comparison.
 
+Run `uv run python evaluate_chunks.py data/coverage-experiment.json --output data/chunk-scores.json` to score a saved run against the labeled holdout evidence. Use `--suite fresh` for a run that includes `eval_chunk_fresh.json`. Evidence groups can list multiple acceptable chunk IDs. A case passes complete coverage only when every group has a hit in the top five. The scorer checks that the labels match the snapshot and reports retrieved and cited coverage separately.
+
 A browser chat that helps GitLab team members find answers about time off and leave in five public GitLab Handbook pages. The evaluation targets are 90% claim faithfulness and a 10-second warm response time. These are project goals; see the evaluation report for what has been measured.
 
 ## Run locally

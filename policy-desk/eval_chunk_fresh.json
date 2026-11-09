@@ -1,0 +1,6 @@
+[
+  {"id":"F01","category":"policy exceptions","question":"Who reviews jury duty pay after more than 25 working days, and who should I contact if bereavement leave exceeds 25 calendar days?","expected_status":"answered","targets":[["time-off","Pay while on Jury Duty"],["time-off","Bereavement / Leave Extensions"]]},
+  {"id":"F02","category":"jurisdiction","question":"For a U.S. employee taking FMLA, who reviews the sources of pay, and do local statutory reporting rules take priority when reporting caregiver sick time?","expected_status":"answered","targets":[["us-leave","Payroll Processing During FMLA"],["time-off","Caregiver Sick Time / Reporting Procedures"]]},
+  {"id":"F03","category":"policy and procedure","question":"What happens to pay and benefits for military service of 31 days or less, and how do I record a public holiday in Workday?","expected_status":"answered","targets":[["leave","Military Leave / For leaves 31 days or less"],["time-off","How to Enter Public Holidays in Workday"]]},
+  {"id":"F04","category":"exact procedure","question":"When caregiver sick time reporting rules differ from local statutory rules, which takes priority?","expected_status":"answered","targets":[["time-off","Caregiver Sick Time / Reporting Procedures"]]}
+]
