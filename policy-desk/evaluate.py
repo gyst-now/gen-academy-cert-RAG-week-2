@@ -38,7 +38,11 @@ def evaluate(cases, mode, rerank, generate, *, search=None):
             ],
         }
         if generate:
-            answer = respond({"documents": docs, "question": case["question"]})["response"]
+            answer = respond({
+                "documents": docs,
+                "question": case["question"],
+                "partial_answer": mode == "dense_gap",
+            })["response"]
             cited_ids = {item["id"] for item in answer["sources"]}
             result.update(
                 response=answer,

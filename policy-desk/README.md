@@ -1,6 +1,8 @@
 # Policy Desk
 
-On the coverage experiment branch, set `POLICY_RETRIEVAL_VARIANT` to `hybrid`, `dense`, `dense_diverse`, or `dense_split` in the local environment. The split variant uses the chat model to propose two searches when the question appears to have multiple parts. Run `uv run python evaluate_coverage.py --output data/coverage-experiment.json` with Supabase and chat configured to reproduce the comparison.
+Set `POLICY_RETRIEVAL_VARIANT=dense_gap` to test evidence recovery. When a question is split into two searches, the chat model checks each part against the five selected passages. If evidence is missing, a targeted hybrid search expands the candidate pool and a second check selects supporting passages. The final limit remains five.
+
+With Supabase and chat configured, compare this experiment with the previous retrievers using `uv run python evaluate_coverage.py --output data/coverage-experiment.json --variants hybrid dense_split dense_gap`. Add `--fresh-cases PATH` with the fresh question file from the `evaluate-chunks` branch to include that set.
 
 A browser chat that helps GitLab team members find answers about time off and leave in five public GitLab Handbook pages. The evaluation targets are 90% claim faithfulness and a 10-second warm response time. These are project goals; see the evaluation report for what has been measured.
 
