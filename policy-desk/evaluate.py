@@ -17,11 +17,11 @@ def matches(doc, target):
     return doc.metadata["source"] == source and heading.casefold() in doc.metadata["section"].casefold()
 
 
-def evaluate(cases, mode, rerank, generate):
+def evaluate(cases, mode, rerank, generate, *, search=None):
     results = []
     for case in cases:
         start = perf_counter()
-        docs = retrieve(case["question"], mode, rerank)
+        docs = search(case["question"]) if search is not None else retrieve(case["question"], mode, rerank)
         ranks = [
             next((rank for rank, doc in enumerate(docs, 1) if matches(doc, target)), None)
             for target in case.get("targets", [])
